@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    background: rgb(255, 217, 224);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.todo-list{
+    width: 30vw;
+    border-radius: 5px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: white;
+}
+form input{
+    width: 100%;
+    font-size: 24px;
+    margin-right: 20px;
+    outline: none;
+    border: none;
+}
+form button{
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 500;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.todos{
+    list-style: none;
+    background: white;
+}
+.todos li{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    font-size: 20px;
+    margin: 10px 0;
+    transition: all 0.3s;
+}
+.todos li:hover i{
+    opacity: 1;
+}
+.todos li span{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+.todos i{
+    transition: all 0.3s;
+    opacity: 0;
+    font-size: 25px;
+}
+.todos i:hover{
+    color: red;
+}
+li.completed{
+    color: grey;
+}
+li.completed span{
+    text-decoration: line-through;
+}
